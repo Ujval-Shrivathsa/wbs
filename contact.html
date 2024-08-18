@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylecontact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f5ebf42d23.js" crossorigin="anonymous"></script>
+    <title>Ujval &#183; Web Designer / Developer</title>
+    <script src="https://kit.fontawesome.com/f5ebf42d23.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "ypvaQ9e-D55RaPeBt",
+            });
+        })();
+    </script>
+
+</head>
+<body>
+    <div id="blob"></div>
+    <div id="blur"></div>
+    <div class="fullbackground">
+        <header>
+            <nav>
+                <div class="hackerText">
+                    <a href="./index.html">
+                        @ Connect With Ujval
+                    </a>
+                </div>
+                <div class="hackerText1">
+                    <a data-value="About" class="about" href="./about.html">
+                        About
+                    </a>
+                </div>
+                <div class="hackerText2">
+                    <a data-value="Work" class="portfolio" href="./work.html">
+                        Work
+                    </a>
+                </div>
+                <div class="hackerText3">
+                    <a data-value="Contact" class="contact" href="./contact.html">
+                        Contact
+                    </a>
+                </div>
+                <div class="haha">
+                    <div onclick="myfunctionrun()" class="hamburger">
+                        <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="containerHome">
+            <div>
+                <h1 class="text">CONNECT</h1>
+                <h1 class="textone">WITH</h1>
+                <h1 class="texttwo">US</h1>
+            </div>
+        </div>
+
+        <div id="showuphamburger" class="classhamburgermenu">
+            <div class="flex">
+                <p class="navigate__text">NAVIGATE</p>
+                <div onclick="myfunctionrunn()" class="close__div">
+                    <span class="close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></span>
+                </div>
+            </div>
+            <div class="home__hamburger">
+                <a href="./index.html" class="hom__hamburger">Home </a>
+            </div>
+            <div class="about_us__hamburger">
+                <a href="./about.html" class="about__us__hamburger">About </a>
+            </div>
+            <div class="work___hamburger">
+                <a href="./work.html" class="work__hamburger">Work </a>
+            </div>
+            <div class="contact__hamburger_">
+                <a href="./contact.html" class="contact__hamburger">Contact </a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="fourth__page">
+        <h2 class="connect__welcome">GET STARTED TODAY</h2>
+        <div class="flex">
+            <p>With a website</p>
+        </div>
+        <div class="hro">
+            <hr class="horizontalline">
+        </div>
+        <div class="make__down">
+            <h5 id="classNote" class="thankyou__note">Thank you, we will contact you as soon as possible.</h5>
+        </div>
+        <form id="contact-form" onsubmit="return SendMail()">
+            <p class="nametext">WHAT'S YOUR NAME?</p>
+            <input type="text" id="from_name" required class="name">
+            <p class="emailtext">WHAT'S YOUR EMAIL ID?</p>
+            <input type="email" id="email_id" class="emailidin">
+            <p class="numebrphone buisness__name">WHAT'S THE NAME OF YOUR BUISNESS?</p>
+            <input type="text" id="name__buisness" placeholder="Optional" class="organizationname">
+            <p class="numebrphone">WHAT'S YOUR PHONE NO</p>
+            <input type="tel" placeholder="Format: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone_no" required class="organizationname">
+            <p class="textabout">YOUR NOTE</p>
+            <textarea id="message" name="textarea" required></textarea>
+            <div class="blocktext">
+                <button type="submit" class="button__sendit">Send it!</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
